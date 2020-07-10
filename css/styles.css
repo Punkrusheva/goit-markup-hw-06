@@ -29,14 +29,7 @@ html {
   margin: 0px;
   padding: 0px;
 }
-/*.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}*/
+
 *,
 *::before,
 *::after {
@@ -97,6 +90,7 @@ a {
   color: var(--light-color);
   width: 196px;
   height: 50px;
+
   border-radius: 4px;
   font-family: var(--font-family);
   font-style: normal;
@@ -273,8 +267,11 @@ a {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  border: 0px;
 }
-
+.hero .button:hover .hero .button:focus {
+  border: 0px;
+}
 /* ADVANTAGES */
 .advantages {
   padding-top: 94px;
@@ -533,6 +530,7 @@ a {
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+  border-top: 1px solid #ececec;
 }
 .portfolio-sorting {
   margin-bottom: 50px;
@@ -864,6 +862,118 @@ a {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.modal h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  color: #212121;
+}
+.modal .button {
+  border: 0px;
+  width: 200px;
+  height: 50px;
+  padding: 10px 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.modal input {
+  min-width: 448px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  margin-bottom: 28px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.modal lable {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: #2196f3;
+}
+
+.modal .textarea {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  padding-left: 16px;
+  margin-bottom: 20px;
+}
+/*
+.modal .checkbox {
+  width: 16px;
+  height: 16px;
+  margin: 0px;
+  padding: 0px;
+  text-align: start;
+  padding-left: 16px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}*/
+
+.modal .icon {
+  display: inline-block;
+  position: absolute;
+
+  transform: translate(80%, 65%);
+  width: 1.1em;
+  height: 1.1em;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;

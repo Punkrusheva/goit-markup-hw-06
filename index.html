@@ -64,11 +64,10 @@
 
     <!--  MAIN   -->
 
-    <main>
       <section class="hero">
         <div class="container">
           <h1>Эффективные решения для вашего бизнеса</h1>
-          <a href="" class="button">Заказать услугу</a>
+          <button class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -642,7 +641,7 @@
         <section class="subscribe">
           <b>Подпишитесь на рассылку</b>
           <form>
-            <input type="text" name="e-mail" value="E-mail" />
+            <input type="text" name="e-mail" value="e-mail" />
             <a href="" class="button"
               >Подписаться
               <svg
@@ -666,5 +665,53 @@
         </section>
       </div>
     </footer>
+    <!--MODAL-->
+    <!-- Вся твоя разметка, включая разметку модалки -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form action="a.pankrusheva@gmail.com" method="post" class="form">
+          <h1>Оставьте свои данные, мы вам перезвоним</h1>
+          <lable for="customer-name">Имя</lable>
+          <br />
+          <svg class="icon icon-person-form">
+            <use xlink:href="./images/svg/symbol-defs.svg#icon-person-form"></use>
+          </svg>
+          <input type="text" name="customer-form" id="customer-name" value="Имя" />
+          <br />
+          <lable for="customer-tel">Телефон</lable>
+          <br />
+          <svg class="icon icon-phone-form">
+            <use xlink:href="./images/svg/symbol-defs.svg#icon-phone-form"></use>
+          </svg>
+          <input type="tel" name="customer-form" id="customer-tel" value="Телефон" />
+          <br />
+          <lable for="customer-email">Почта</lable>
+          <br />
+          <svg class="icon icon-email-form">
+            <use xlink:href="./images/svg/symbol-defs.svg#icon-email-form"></use>
+          </svg>
+          <input type="email" name="customer-form" id="customer-email" value="Почта" />
+          <br />
+          <input type="textarea" class="textarea" name="customer-form" value="Комментарий"></textarea>
+          <br />
+          <div class="checkbox">
+          <input type="checkbox" class="checkbox" name="customer-form"id="customer-agreement" value="customer-agreement" />
+          <lable for="customer-agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            </div>
+          <br />
+          <button class="button order-service" type="button" name="customer-form" value="Отправить">
+            Отправить
+          </button>
+          <button class="button close" type="button" name="customer-form" value="Закрыть" data-modal-close>
+            <svg class="icon icon-close-form">
+              <use xlink:href="./images/svg/symbol-defs.svg#icon-close-form"></use>
+            </svg>
+            Закрыть
+          </button>
+        </form>
+      </div>
+    </div>
+    
+        <script src="./js/modal.js"></script>
   </body>
 </html>
