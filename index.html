@@ -659,32 +659,32 @@
       </div>
     </footer>
     <!--MODAL-->
-    <!-- Вся твоя разметка, включая разметку модалки -->
+    
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form action="a.pankrusheva@gmail.com" method="post" class="form">
+        <form action="" method="post" class="form">
           <h1>Оставьте свои данные, мы вам перезвоним</h1>
-          <lable for="customer-name">Имя</lable>
-          <br />
-          <svg class="icon icon-person-form">
-            <use xlink:href="./images/svg/symbol-defs.svg#icon-person-form"></use>
-          </svg>
-          <input type="text" name="customer-form" id="customer-name" placeholder="Имя" />
-          <br />
-          <lable for="customer-tel">Телефон</lable>
-          <br />
-          <svg class="icon icon-phone-form">
-            <use xlink:href="./images/svg/symbol-defs.svg#icon-phone-form"></use>
-          </svg>
-          <input type="tel" name="customer-form" id="customer-tel" placeholder="Телефон" />
-          <br />
-          <lable for="customer-email">Почта</lable>
-          <br />
-          <svg class="icon icon-email-form">
-            <use xlink:href="./images/svg/symbol-defs.svg#icon-email-form"></use>
-          </svg>
-          <input type="email" name="customer-form" id="customer-email" placeholder="Почта" />
-          <br />
+          <div class="form-field">
+            <svg class="icon icon-person-form">
+              <use xlink:href="./images/svg/symbol-defs.svg#icon-person-form"></use>
+            </svg>
+            <input class="form-input" type="text" name="customer-form" id="customer-name" />
+            <lable class="form-lable" for="customer-name">Имя</lable>
+          </div>
+          <div class="form-field">
+            <svg class="icon icon-phone-form">
+              <use xlink:href="./images/svg/symbol-defs.svg#icon-phone-form"></use>
+            </svg>
+            <input class="form-input" type="tel" name="customer-form" id="customer-tel" />
+            <lable class="form-lable" for="customer-tel">Телефон</lable>
+          </div>
+          <div class="form-field">
+            <svg class="icon icon-email-form">
+              <use xlink:href="./images/svg/symbol-defs.svg#icon-email-form"></use>
+             </svg>
+            <input class="form-input" type="email" name="customer-form" id="customer-email" />
+            <lable class="form-lable" for="customer-email">Почта</lable>
+          </div>
           <textarea class="textarea" name="customer-form" rows="4" placeholder="Комментарий"></textarea>
           <br />
           <div class="checkbox">
