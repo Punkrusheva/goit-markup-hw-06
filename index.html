@@ -641,7 +641,7 @@
         <section class="subscribe">
           <b>Подпишитесь на рассылку</b>
           <form>
-            <input type="text" name="e-mail" value="e-mail" />
+            <input type="email" name="e-mail" value="E-mail" />
             <a href="" class="button"
               >Подписаться
               <svg
@@ -654,13 +654,6 @@
                 <use href="./images/svg/symbol-defs.svg#icon-send"></use>
               </svg>
             </a>
-            <!--
-                                  <input
-                                  type="submit"
-                                  name="Подписаться"
-                                  value="Подписаться"
-                                />
-                                -->
           </form>
         </section>
       </div>
@@ -692,22 +685,21 @@
           </svg>
           <input type="email" name="customer-form" id="customer-email" value="Почта" />
           <br />
-          <input type="textarea" class="textarea" name="customer-form" value="Комментарий"></textarea>
+          <input type="textarea" class="textarea" name="customer-form" rows="4" value="Комментарий"></textarea>
           <br />
           <div class="checkbox">
-          <input type="checkbox" class="checkbox" name="customer-form"id="customer-agreement" value="customer-agreement" />
+          <input type="checkbox" class="checkbox" name="customer-form" id="customer-agreement" value="customer-agreement" />
           <lable for="customer-agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
             </div>
           <br />
           <button class="button order-service" type="button" name="customer-form" value="Отправить">
             Отправить
           </button>
-          <button class="button close" type="button" name="customer-form" value="Закрыть" data-modal-close>
+          <a class="close" data-modal-close>
             <svg class="icon icon-close-form">
               <use xlink:href="./images/svg/symbol-defs.svg#icon-close-form"></use>
             </svg>
-            Закрыть
-          </button>
+          </a>
         </form>
       </div>
     </div>
