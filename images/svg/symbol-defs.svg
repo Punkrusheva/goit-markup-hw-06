@@ -81,9 +81,8 @@
 <symbol id="icon-checkbox-off" viewBox="0 0 34 32">
 <path d="M30.293 3.627v24.747h-26.453v-24.747h26.453zM30.293 0h-26.453c-2.133 0-3.84 1.707-3.84 3.627v24.747c0 2.133 1.707 3.627 3.84 3.627h26.453c2.133 0 3.84-1.707 3.84-3.627v-24.747c0-2.133-1.707-3.627-3.84-3.627z"></path>
 </symbol>
-<symbol id="icon-icon-checkbox-on" viewBox="0 0 34 32">
-<path fill="var(--accent-color)" style="fill: var(--color1, var(--accent-color))" d="M4.267 0h25.6c2.356 0 4.267 1.91 4.267 4.267v23.467c0 2.356-1.91 4.267-4.267 4.267h-25.6c-2.356 0-4.267-1.91-4.267-4.267v-23.467c0-2.356 1.91-4.267 4.267-4.267z"></path>
-<path fill="#fff" style="fill: var(--color2, #fff); stroke: var(--color2, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4267" d="M8.448 16.533l-0.149-0.128-0.149 0.128-1.899 1.792-0.171 0.149 0.171 0.171 7.616 7.253 0.128-0.149 16.171-15.424-0.149-0.149-1.877-1.792-0.149-0.149-0.149 0.149-13.973 13.312-5.419-5.163z"></path>
+<symbol id="icon-icon-checkbox-on" viewBox="0 0 42 32">
+<path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.4 15.36l-0.32-0.32-3.2 2.88v0.32l11.2 10.88h0.32l24.32-23.040v-0.32l-3.2-2.88-21.44 20.16-7.68-7.68z"></path>
 </symbol>
 </defs>
 </svg>

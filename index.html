@@ -665,19 +665,19 @@
           <form action="azcvbn" method="post" class="form">
           <div class="form-field">
             <input class="form-input" type="text" name="customer-form" id="customer-name"  placeholder=" "/>
-            <lable class="form-lable" for="customer-name">Имя</lable>
+            <label class="form-label" for="customer-name">Имя</label>
             <svg class="icon">
               <use xlink:href="./images/svg/symbol-defs.svg#icon-person-form"></use>
             </svg>
           </div>
           <div class="form-field"><input class="form-input" type="tel" name="customer-form" id="customer-tel" placeholder=" " />
-            <lable class="form-lable" for="customer-tel">Телефон</lable>
+            <label class="form-label" for="customer-tel">Телефон</label>
             <svg class="icon">
               <use xlink:href="./images/svg/symbol-defs.svg#icon-phone-form"></use>
             </svg>
           </div>
           <div class="form-field"><input class="form-input" type="email" name="customer-form" id="customer-email"  placeholder=" "/>
-            <lable class="form-lable" for="customer-email">Почта</lable>
+            <label class="form-label" for="customer-email">Почта</label>
             <svg class="icon">
               <use xlink:href="./images/svg/symbol-defs.svg#icon-email-form"></use>
             </svg>
@@ -688,15 +688,15 @@
             <!--<svg class="icon icon-icon-checkbox-off">
               <use xlink:href="#icon-icon-checkbox-off"></use>
             </svg>
-            <svg class="icon icon-icon-checkbox-on">
+            <svg class="icon-icon-checkbox-on">
               <use xlink:href="#icon-icon-checkbox-on"></use>
             </svg>-->
-            <input class="checkbox-sign" type="checkbox" name="customer-form" id="customer-agreement" value="customer-agreement" />
-            <lable for="customer-agreement">
-              Соглашаюсь с рассылкой и принимаю 
-              <a href="">Условия договора</a>
+            <label class="checkbox-label">
+              Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
             </label>
-          </div>
+            <input class="checkbox-sign" type="checkbox" name="customer-form" id="customer-agreement" value="customer-agreement" />
+            <span class="icon"></span>
+            </div>
           <br />
           <button class="button order-service" type="button" name="customer-form" value="Отправить">
             Отправить
