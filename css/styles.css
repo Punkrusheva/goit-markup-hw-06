@@ -1039,17 +1039,10 @@ a {
   color: var(--accent-color);
   transform: translateY(-28px);
 }
-/*.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}*/
 .checkbox {
   position: relative;
   text-align: center;
+  margin-bottom: 10px;
 }
 .checkbox .checkbox-label {
   display: inline-block;
@@ -1063,7 +1056,7 @@ a {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 20px;
   letter-spacing: 0.03em;
 
   color: #757575;
@@ -1093,9 +1086,10 @@ a {
   display: inline-block;
   border: 2px solid var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url(../images/svg/symbol-defs.svg#icon-checkbox-on);
+  background-image: url("../images/svg/icon-checkbox-on.svg");
+  fill: red;
   background-size: contain;
-  background-origin: content-box;
+  background-origin: border-box;
 }
 
 .modal .icon-close-form {
@@ -1117,6 +1111,8 @@ a {
   fill: var(--accent-color);
 }
 .modal .button {
+  margin: 0px;
+  padding: 0px;
   display: block;
   margin-left: auto;
   margin-right: auto;
