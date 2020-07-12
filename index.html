@@ -682,21 +682,18 @@
               <use xlink:href="./images/svg/symbol-defs.svg#icon-email-form"></use>
             </svg>
           </div>
-          <textarea class="textarea" name="customer-form" rows="4" placeholder="Комментарий"></textarea>
+          <div class="textarea-field">
+          <textarea class="textarea" name="customer-form" id="textarea" placeholder=" "></textarea>
+          <label class="textarea-label" for="textarea">Комментарий</label>
+          </div>
           </form>
           <div class="checkbox">
-            <!--<svg class="icon icon-icon-checkbox-off">
-              <use xlink:href="#icon-icon-checkbox-off"></use>
-            </svg>
-            <svg class="icon-icon-checkbox-on">
-              <use xlink:href="#icon-icon-checkbox-on"></use>
-            </svg>-->
-            <label class="checkbox-label">
+            <label class="checkbox-label" for="customer-agreement">
+              <input class="checkbox-sign" type="checkbox" name="customer-form" id="customer-agreement" value="customer-agreement" />
+              <span class="checkbox-icon"></span>
               Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
             </label>
-            <input class="checkbox-sign" type="checkbox" name="customer-form" id="customer-agreement" value="customer-agreement" />
-            <span class="icon"></span>
-            </div>
+          </div>
           <br />
           <button class="button order-service" type="button" name="customer-form" value="Отправить">
             Отправить
