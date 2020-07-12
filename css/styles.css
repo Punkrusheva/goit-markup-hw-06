@@ -862,6 +862,38 @@ a {
 .subscribe [type="email"]:hover {
   outline: none;
 }
+.subscribe [type="email"]::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe [type="email"]::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe [type="email"]:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe [type="email"]:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe [type="email"]:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe [type="email"]:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe [type="email"]:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe [type="email"]:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .icon-send {
   display: inline-block;
   width: 1.5em;
