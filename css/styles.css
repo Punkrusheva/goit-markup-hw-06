@@ -827,7 +827,7 @@ a {
   flex-wrap: wrap;
   width: 570px;
 }
-.subscribe b {
+.subscribe label {
   margin-bottom: 20px;
   font-family: var(--font-family);
   font-style: normal;
@@ -1003,7 +1003,6 @@ a {
   border: 1px solid var(--accent-color);
 }
 .form-input:focus + .form-label,
-.form-input:hover + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
   color: var(--accent-color);
   transform: translate(-26px, -36px);
@@ -1066,7 +1065,6 @@ a {
   transition: transform 250ms linear;
 }
 .textarea:focus + .textarea-label,
-.textarea:hover + .textarea-label,
 .textarea:not(:placeholder-shown) + .textarea-label {
   color: var(--accent-color);
   transform: translateY(-28px);
@@ -1075,6 +1073,10 @@ a {
   position: relative;
   text-align: center;
   margin-bottom: 10px;
+}
+.checkbox-icon:hover,
+.checkbox-icon:focus {
+  cursor: pointer;
 }
 .checkbox .checkbox-label {
   display: inline-block;
@@ -1119,7 +1121,6 @@ a {
   border: 2px solid var(--accent-color);
   background-color: var(--accent-color);
   background-image: url("../images/svg/icon-checkbox-on.svg");
-  fill: red;
   background-size: contain;
   background-origin: border-box;
 }
@@ -1141,6 +1142,7 @@ a {
 .modal .icon-close-form:hover,
 .modal .icon-close-form:focus {
   fill: var(--accent-color);
+  cursor: pointer;
 }
 .modal .button {
   margin: 0px;
